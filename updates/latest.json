@@ -1,0 +1,16 @@
+{
+    "version": "1.0.1",
+    "published": "2026-11-23",
+    "notes": "Updater, dauerhafte Microsoft-Anmeldung, Fabric-API- und Mod-Kompatibilit\u00e4tspr\u00fcfung sowie Mod-Icons.",
+    "jar": {
+        "url": "zyrix-launcher-1.0.1.jar",
+        "size": 5002879,
+        "sha256": "4da9c0c86f07fd4c17a40504b6e06f283faca792d5e9c04844746ede418616dc"
+    },
+    "installer": {
+        "url": "https://github.com/Zenvex1/Zenvex1.github.io/releases/download/v1.0.1/ZYRIX-CLIENT-Setup-1.0.1.exe",
+        "size": 56285184,
+        "sha256": "39bb882774000af089b75b89b09ebc02ed99e08278e9a0169d3e189d2337aff7"
+    },
+    "signature": "9hfF1iLIXjazwuZoITaqOGB0wPnLBKt9R3YyOgUSD7Htuy5Jy1A8QG7np4deuuNyrK0J5APie1uAx4eNtmwxAg=="
+}

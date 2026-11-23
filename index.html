@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZYRIX CLIENT – Der aufgeräumte Minecraft-Launcher</title>
+  <meta name="description" content="ZYRIX CLIENT ist ein kostenloser Minecraft-Launcher für Fabric: Microsoft-Anmeldung, isolierte Profile, Modrinth und In-Game-Menü. Für Windows 10/11, ohne Java-Installation.">
+  <meta name="theme-color" content="#060607">
+  <meta property="og:title" content="ZYRIX CLIENT">
+  <meta property="og:description" content="Kostenloser Minecraft-Launcher für Fabric – Microsoft-Login, isolierte Profile, Modrinth und In-Game-Menü.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/shot-home.png">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="assets/styles.css">
+  <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</head>
+<body>
+  <div class="backdrop" aria-hidden="true">
+    <div class="backdrop-grid"></div>
+    <div class="backdrop-glow glow-mint"></div>
+    <div class="backdrop-glow glow-violet"></div>
+    <div class="backdrop-glow glow-bottom"></div>
+    <div class="dust" id="dust"></div>
+  </div>
+
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="ZYRIX CLIENT Startseite">
+        <span class="mark" aria-hidden="true">Z</span>
+        <span class="brand-name">ZYRIX <em>CLIENT</em></span>
+        <span class="chip chip-version" id="versionChip">v1.0.1</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Hauptnavigation">
+        <a href="#features">Features</a>
+        <a href="#screens">Screenshots</a>
+        <a href="#download">Download</a>
+        <a class="btn btn-primary btn-small" href="#download">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4 17v2.5A1.5 1.5 0 0 0 5.5 21h13a1.5 1.5 0 0 0 1.5-1.5V17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Herunterladen
+        </a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="nav" aria-label="Menü öffnen">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <span class="pill reveal"><span class="pulse-dot"></span> v1.0.1 · Minecraft 1.21 – 1.21.11</span>
+        <h1 class="wordmark reveal" style="--d:60ms">ZYRIX <span>CLIENT</span></h1>
+        <p class="lead reveal" style="--d:120ms">
+          Der aufgeräumte Minecraft-Launcher für Fabric. Echte Microsoft-Anmeldung,
+          isolierte Profile, Modrinth-Suche und ein schnelles In-Game-Menü –
+          kostenlos, werbefrei und ohne Java-Installation.
+        </p>
+
+        <div class="hero-actions reveal" style="--d:180ms">
+          <a class="btn btn-primary btn-large" href="https://github.com/Zenvex1/Zenvex1.github.io/releases/download/v1.0.1/ZYRIX-CLIENT-Setup-1.0.1.exe" download>
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4 17v2.5A1.5 1.5 0 0 0 5.5 21h13a1.5 1.5 0 0 0 1.5-1.5V17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Kostenlos herunterladen
+          </a>
+          <a class="btn btn-ghost btn-large" href="#features">Features ansehen</a>
+        </div>
+
+        <ul class="hero-meta reveal" style="--d:240ms">
+          <li><span class="check" aria-hidden="true"></span> Windows 10/11</li>
+          <li><span class="check" aria-hidden="true"></span> Kein Java nötig</li>
+          <li><span class="check" aria-hidden="true"></span> 50,2 MB</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual reveal" style="--d:200ms">
+        <div class="preview" id="preview">
+          <div class="preview-glow" aria-hidden="true"></div>
+          <div class="preview-frame">
+            <div class="preview-bar" aria-hidden="true">
+              <span></span><span></span><span></span>
+              <em>ZYRIX CLIENT</em>
+            </div>
+            <img src="assets/shot-home.png" width="1380" height="880"
+                 alt="Startseite des ZYRIX CLIENT mit Profil, News und Statistiken"
+                 fetchpriority="high">
+          </div>
+          <div class="float-badge badge-a" aria-hidden="true"><i class="dot mint"></i> Fabric 0.20.1</div>
+          <div class="float-badge badge-b" aria-hidden="true"><i class="dot violet"></i> Modrinth</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Microsoft-Anmeldung</span><i></i>
+        <span>Isolierte Profile</span><i></i>
+        <span>Modrinth</span><i></i>
+        <span>Fabric 1.21.11</span><i></i>
+        <span>In-Game-Menü</span><i></i>
+        <span>Sichere Importe</span><i></i>
+        <span>Microsoft-Anmeldung</span><i></i>
+        <span>Isolierte Profile</span><i></i>
+        <span>Modrinth</span><i></i>
+        <span>Fabric 1.21.11</span><i></i>
+        <span>In-Game-Menü</span><i></i>
+        <span>Sichere Importe</span><i></i>
+      </div>
+    </div>
+
+    <section class="section wrap" id="features">
+      <header class="section-head reveal">
+        <span class="eyebrow">Features</span>
+        <h2>Alles, was du brauchst.<br><span class="dim">Nichts, was du nicht brauchst.</span></h2>
+        <p>Ein Launcher, der sich auf das Wesentliche konzentriert: schnell starten,
+          sauber verwalten und im Spiel alles griffbereit haben.</p>
+      </header>
+
+      <div class="feature-grid">
+        <article class="card reveal" style="--d:0ms">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.2" r="3.4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M5 20.2c.5-3.7 3.4-5.8 7-5.8s6.5 2.1 7 5.8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Microsoft-Anmeldung</h3>
+          <p>Sicherer Device-Code-Login direkt bei Microsoft. Zugangsdaten bleiben
+            dort, wo sie hingehören – der Client speichert nur das Token.</p>
+        </article>
+
+        <article class="card reveal" style="--d:60ms">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="17" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 9h17M8 4v16" stroke="currentColor" stroke-width="1.6"/></svg>
+          </div>
+          <h3>Isolierte Profile</h3>
+          <p>Jedes Profil bekommt eigene Welten, Mods und Einstellungen. Version
+            und Loader legst du pro Profil fest – ohne Kreuzkontamination.</p>
+        </article>
+
+        <article class="card reveal" style="--d:120ms">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7.5 12 3l8 4.5v9L12 21l-8-4.5v-9Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M4 7.5 12 12l8-4.5M12 12v9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Modrinth integriert</h3>
+          <p>Mods suchen, filtern und mit einem Klick installieren. Abhängigkeiten
+            und Kompatibilität bleiben dabei im Blick.</p>
+        </article>
+
+        <article class="card reveal" style="--d:180ms">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 15v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Sichere Importe</h3>
+          <p>Bestehende Instanzen als ZIP oder Ordner übernehmen – mit geprüfter
+            Staging-Struktur und Schutz gegen Pfad-Traversal.</p>
+        </article>
+
+        <article class="card reveal" style="--d:240ms">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4.5 13.5H11L10 22l8.5-11.5H12L13 2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Leicht &amp; schnell</h3>
+          <p>Schlanke Oberfläche, gebündelte Java-Laufzeit und flüssige Animationen
+            ohne unnötigen Ballast. Startet, wenn du es sagst.</p>
+        </article>
+
+        <article class="card reveal" style="--d:300ms">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="13" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 21h8M12 18v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M7.5 10.5h9M7.5 13.5h5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3>ZYRIX In-Game-Mod</h3>
+          <p>Rechts-Shift öffnet das Client-Menü direkt im Spiel: Module, HUD und
+            Einstellungen an einem Ort – nahtlos über Fabric.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wrap" id="screens">
+      <header class="section-head reveal">
+        <span class="eyebrow">Einblicke</span>
+        <h2>Klare Optik. <span class="dim">Direkt loslegen.</span></h2>
+        <p>Dunkle Karten, ruhige Akzente und alles Wichtige auf einen Blick.
+          Klicke auf eine Aufnahme für die große Ansicht.</p>
+      </header>
+
+      <div class="gallery">
+        <figure class="shot reveal" style="--d:0ms">
+          <button class="shot-open" data-full="assets/shot-home.png" data-caption="Startseite mit Profil, News und Statistiken" aria-label="Startseite vergrößern">
+            <img src="assets/shot-home.png" width="1380" height="880" loading="lazy" alt="Startseite des ZYRIX CLIENT">
+          </button>
+          <figcaption><strong>Startseite</strong><span>Profil, News und Live-Statistiken</span></figcaption>
+        </figure>
+
+        <figure class="shot reveal" style="--d:80ms">
+          <button class="shot-open" data-full="assets/shot-mods.png" data-caption="Modrinth-Suche mit Installations-Panel" aria-label="Mods-Seite vergrößern">
+            <img src="assets/shot-mods.png" width="1380" height="880" loading="lazy" alt="Modrinth-Suche im ZYRIX CLIENT">
+          </button>
+          <figcaption><strong>Mods</strong><span>Modrinth durchsuchen und installieren</span></figcaption>
+        </figure>
+
+        <figure class="shot reveal" style="--d:160ms">
+          <button class="shot-open" data-full="assets/shot-profiles.png" data-caption="Profile mit isolierten Spielordnern" aria-label="Profile-Seite vergrößern">
+            <img src="assets/shot-profiles.png" width="1380" height="880" loading="lazy" alt="Profilverwaltung im ZYRIX CLIENT">
+          </button>
+          <figcaption><strong>Profile</strong><span>Isolierte Spielordner und Versionen</span></figcaption>
+        </figure>
+
+        <figure class="shot reveal" style="--d:240ms">
+          <button class="shot-open" data-full="assets/shot-settings.png" data-caption="Einstellungen für Java, Speicher und Startparameter" aria-label="Einstellungen vergrößern">
+            <img src="assets/shot-settings.png" width="1380" height="880" loading="lazy" alt="Einstellungen im ZYRIX CLIENT">
+          </button>
+          <figcaption><strong>Einstellungen</strong><span>Java, Speicher und Startparameter</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section wrap" id="download">
+      <div class="download-panel reveal">
+        <div class="download-copy">
+          <span class="eyebrow">Download</span>
+          <h2>Bereit für dein<br>nächstes Spiel?</h2>
+          <p>Lade ZYRIX CLIENT herunter, starte das Setup und melde dich mit deinem
+            Microsoft-Konto an. Java, Fabric und die In-Game-Mod sind bereits enthalten.</p>
+
+          <ol class="steps">
+            <li><span>01</span><div><strong>Installer herunterladen</strong><em>Rund 54 MB, für Windows 10/11 (64-Bit).</em></div></li>
+            <li><span>02</span><div><strong>Setup ausführen</strong><em>Keine Java-Installation, keine Zusatzsoftware.</em></div></li>
+            <li><span>03</span><div><strong>Anmelden und spielen</strong><em>Profil wählen, Mods ergänzen, starten.</em></div></li>
+          </ol>
+
+          <ul class="req-list">
+            <li>Windows 10/11 · 64-Bit</li>
+            <li>4 GB RAM · 8 GB empfohlen</li>
+            <li>Minecraft 1.21 – 1.21.11</li>
+            <li>Internet für Login und Modrinth</li>
+          </ul>
+        </div>
+
+        <aside class="download-card">
+          <div class="dc-head">
+            <span class="mark" aria-hidden="true">Z</span>
+            <div>
+              <strong>ZYRIX CLIENT</strong>
+              <span>Windows · 64-Bit</span>
+            </div>
+          </div>
+
+          <dl class="dc-meta">
+            <div><dt>Version</dt><dd id="downloadVersion">1.0.1</dd></div>
+            <div><dt>Datei</dt><dd>Setup (.exe)</dd></div>
+            <div><dt>Größe</dt><dd id="downloadSize">53,7 MB</dd></div>
+            <div><dt>Stand</dt><dd>November 2026</dd></div>
+          </dl>
+
+          <a class="btn btn-primary btn-block" id="downloadLink" href="https://github.com/Zenvex1/Zenvex1.github.io/releases/download/v1.0.1/ZYRIX-CLIENT-Setup-1.0.1.exe" download>
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4 17v2.5A1.5 1.5 0 0 0 5.5 21h13a1.5 1.5 0 0 0 1.5-1.5V17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Jetzt herunterladen
+          </a>
+
+          <div class="hash">
+            <span>SHA-256</span>
+            <code id="sha256">39BB882774000AF089B75B89B09EBC02ED99E08278E9A0169D3E189D2337AFF7</code>
+            <button type="button" class="copy" data-copy="#sha256">Kopieren</button>
+          </div>
+
+          <p class="fine">Der Client ist nicht signiert. Windows SmartScreen kann beim
+            ersten Start warnen – über „Weitere Informationen“ und „Trotzdem ausführen“
+            geht es weiter.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <span class="mark" aria-hidden="true">Z</span>
+          <span class="brand-name">ZYRIX <em>CLIENT</em></span>
+        </a>
+        <p>Der aufgeräumte Minecraft-Launcher für Fabric. Kostenlos, werbefrei
+          und ohne Java-Installation.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Produkt">
+        <h4>Produkt</h4>
+        <a href="#features">Features</a>
+        <a href="#screens">Screenshots</a>
+        <a href="#download">Download</a>
+      </nav>
+
+      <nav class="footer-col" aria-label="Rechtliches">
+        <h4>Rechtliches</h4>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+
+      <div class="footer-col">
+        <h4>Status</h4>
+        <span class="status"><i class="dot mint"></i> Version 1.0.1</span>
+        <span class="status"><i class="dot violet"></i> Fabric 0.20.1</span>
+        <span class="status"><i class="dot"></i> Self-Test 10/10</span>
+      </div>
+    </div>
+
+    <div class="wrap footer-bottom">
+      <span>© <span id="year">2026</span> ZYRIX CLIENT</span>
+      <span>Nicht mit Mojang Studios oder Microsoft verbunden.</span>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot-Ansicht" hidden>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Schließen">&times;</button>
+    <img id="lightboxImage" src="" alt="">
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>

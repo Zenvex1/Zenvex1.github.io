@@ -1,0 +1,16 @@
+{
+  "name": "ZYRIX CLIENT",
+  "short_name": "ZYRIX",
+  "description": "Der aufgeräumte Minecraft-Launcher für Fabric.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#060607",
+  "theme_color": "#060607",
+  "icons": [
+    {
+      "src": "assets/icon.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    }
+  ]
+}
